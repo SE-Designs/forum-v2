@@ -1,0 +1,230 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #7dc81b;
+  --secondary: #0051ff;
+  --black: #080705;
+  --white: #f7e9e4;
+  --semi-black: #24333f;
+  --semi-white: #687680;
+  --paragraph: rgba(247, 233, 228, 0.75);
+  --shadow: rgba(8, 7, 5, 0.25);
+  --primary-shadow: rgba(236, 78, 32, 0.4);
+  --secondary-shadow: rgba(142, 2, 229, 0.4);
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Space Grotesk - 400, 700 */
+/* Poppins - 200, 400, 700, 900 */
+/* Space Mono - 700 Italic */
+
+body {
+  width: 100vw;
+}
+
+.main {
+  height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #080705;
+  padding: 10px 40px;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.main-container {
+  position: relative;
+  top: 60px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: var(--secondary);
+  padding: 40px;
+  background: linear-gradient(
+    306deg,
+    #63a012,
+    #7dc81b,
+    #24bfea,
+    #0051ff,
+    #3948f5
+  );
+  background-size: 800% 800%;
+  -webkit-animation: animated-main-bg 15s ease infinite;
+  -moz-animation: animated-main-bg 15s ease infinite;
+  -o-animation: animated-main-bg 15s ease infinite;
+  animation: animated-main-bg 15s ease infinite;
+}
+
+.logo-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+}
+
+.nav-logo a:focus {
+  border-bottom: 2px solid var(--primary);
+}
+
+.anchors-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.anchors-container a {
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 10px;
+  padding: 0 14px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.anchors-container a:hover,
+.anchors-container a:focus {
+  opacity: 0.8;
+  background-color: #333;
+}
+
+.navbar .btn-container {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.navbar .btn-container a {
+  margin: 0 10px;
+}
+
+.btn {
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.btn-big {
+  border-radius: 8px;
+  padding: 12px 22px;
+}
+
+.btn-primary {
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-secondary {
+  color: var(--white);
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-white {
+  color: var(--secondary);
+  background-color: var(--white);
+  border-color: var(--white);
+}
+
+.btn-black {
+  color: var(--primary);
+  background-color: var(--black);
+  border-color: var(--black);
+}
+
+.btn-special {
+  color: var(--primary);
+  background-color: var(--black);
+  border-color: var(--black);
+  box-shadow: 0 0 20px 10px var(--primary-shadow),
+    10px 0 20px var(--primary-shadow), -10px 0 20px var(--primary-shadow);
+}
+
+@-webkit-keyframes animated-main-bg {
+  0% {
+    background-position: 0% 83%;
+  }
+  50% {
+    background-position: 100% 18%;
+  }
+  100% {
+    background-position: 0% 83%;
+  }
+}
+
+@-moz-keyframes animated-main-bg {
+  0% {
+    background-position: 0% 83%;
+  }
+  50% {
+    background-position: 100% 18%;
+  }
+  100% {
+    background-position: 0% 83%;
+  }
+}
+
+@-o-keyframes animated-main-bg {
+  0% {
+    background-position: 0% 83%;
+  }
+  50% {
+    background-position: 100% 18%;
+  }
+  100% {
+    background-position: 0% 83%;
+  }
+}
+
+@keyframes animated-main-bg {
+  0% {
+    background-position: 0% 83%;
+  }
+  50% {
+    background-position: 100% 18%;
+  }
+  100% {
+    background-position: 0% 83%;
+  }
+}

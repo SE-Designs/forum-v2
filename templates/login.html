@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- RESET CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FONT: Montserrat & Titillium Web -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Titillium+Web:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <title>Login / Register</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar-top">
+        <ul class="nav-flex-row">
+          <li class="nav-left">
+            <div class="nav-logo">
+              <a href="index.html"><h1>OkuForum</h1></a>
+            </div>
+          </li>
+          <li class="nav-right">
+            <div class="nav-btn">
+              <button class="btn btn-login" id="login-btn">Login</button>
+              <button class="btn btn-register" id="register-btn">
+                Register
+              </button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main">
+      <section class="login-signup" id="login-signup">
+        <div class="container" id="login-container">
+          <h2>Login Now</h2>
+          <form action="#">
+            <div class="form-control">
+              <input
+                type="text"
+                name="username"
+                id="l-username"
+                required
+                autocomplete="username"
+                accesskey="z"
+                autofocus
+              />
+              <label for="l-username">Username</label>
+            </div>
+            <div class="form-control">
+              <input
+                type="password"
+                name="password"
+                id="l-password"
+                required
+                autocomplete="current-password"
+                accesskey="x"
+              />
+              <label for="l-password">Password</label>
+            </div>
+
+            <button class="btn">Login</button>
+
+            <span class="bottom-text"
+              >Don't have an account?
+              <a href="#" id="register-btn">Register</a></span
+            >
+          </form>
+        </div>
+        <div class="container hidden" id="register-container">
+          <h2>Register Now</h2>
+          <form action="#">
+            <div class="form-control">
+              <input
+                type="text"
+                name="username"
+                id="r-username"
+                required
+                autofocus
+                autocomplete="username"
+                accesskey="z"
+              />
+              <label for="r-username">Username</label>
+            </div>
+            <div class="form-control">
+              <input
+                type="password"
+                name="password"
+                id="r-password"
+                required
+                autocomplete="new-password"
+                accesskey="x"
+              />
+              <label for="r-password">Password</label>
+            </div>
+            <div class="form-control">
+              <input
+                type="password"
+                name="repeat-password"
+                id="r-repeat-password"
+                required
+                autocomplete="new-password"
+                accesskey="c"
+              />
+              <label for="r-repeat-password">Repeat Password</label>
+            </div>
+
+            <button class="btn">Register</button>
+
+            <span class="bottom-text"
+              >Already have an account?
+              <a href="#" id="login-btn">Login Now</a></span
+            >
+          </form>
+        </div>
+      </section>
+    </section>
+  </body>
+  <script src="../scripts/login.js"></script>
+</html>
