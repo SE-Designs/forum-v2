@@ -103,9 +103,9 @@
     />
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="../styles/style.css" />
-    <!-- INDEX CSS -->
-    <link rel="stylesheet" href="../styles/index.css" />
-    <title>Okumi - Homepage</title>
+    <!-- LOGIN CSS -->
+    <link rel="stylesheet" href="../styles/register.css" />
+    <title>Okumi - Login</title>
   </head>
   <body>
     <main class="main" id="main">
@@ -136,27 +136,73 @@
       <!-- MAIN CONTENT -->
       <div class="main-container" id="main-container">
         <div class="main-wrapper">
-          <h2 class="title">Your Journey of Education starts Here!</h2>
-          <h3 class="after-title">
-            Education is vital for everyone. Discuss, Learn and Enjoy new, free
-            and open for all Okumi Forum
-          </h3>
-          <div class="btn-container">
-            <a href="../templates/login.html"
-              ><button class="btn btn-big btn-black" id="btn-login">
-                Login
-              </button></a
-            ><a href="#"
-              ><button class="btn btn-big btn-white" id="btn-register">
-                Register
-              </button></a
+          <h2 class="title">Register Now</h2>
+          <form action="#" class="form-vertical" method="POST">
+            <div class="form-control">
+              <div class="form-wrapper">
+                <input
+                  class="input-field"
+                  type="text"
+                  name="username"
+                  id="username"
+                  required
+                  maxlength="24"
+                  autocomplete="username"
+                  accesskey="z"
+                  autofocus
+                />
+                <div class="horizontal-rule"></div>
+              </div>
+              <label class="control-label" for="username">Username:</label>
+            </div>
+            <div class="form-control">
+              <div class="form-wrapper">
+                <input
+                  class="input-field"
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                  maxlength="48"
+                  autocomplete="current-password"
+                  accesskey="x"
+                />
+                <div class="horizontal-rule"></div>
+              </div>
+              <label class="control-label" for="password">Password:</label>
+            </div>
+            <div class="form-control">
+              <div class="form-wrapper">
+                <input
+                  class="input-field"
+                  type="password"
+                  name="repeat-password"
+                  id="repeat-password"
+                  required
+                  maxlength="48"
+                  autocomplete="current-password"
+                  accesskey="c"
+                  autofocus
+                />
+                <div class="horizontal-rule"></div>
+              </div>
+              <label class="control-label" for="repeat-password"
+                >Repeat Password:</label
+              >
+            </div>
+            <button class="btn btn-big btn-white">Register</button>
+            <span class="bottom-text">Already have an account?</span>
+            <a
+              href="../templates/login.html"
+              class="after-bottom-text"
+              id="login-btn"
+              >Login</a
             >
-          </div>
+          </form>
         </div>
-        <!-- <img src="../assets/1.jpg" alt="" /> -->
       </div>
     </main>
     <script src="../scripts/main.js"></script>
-    <script src="../scripts/index.js"></script>
+    <script src="../scripts/register.js"></script>
   </body>
 </html>

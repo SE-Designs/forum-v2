@@ -4,8 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="../assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
     <!-- RESET CSS -->
     <link
       rel="stylesheet"
@@ -14,121 +89,101 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- FONT: Montserrat & Titillium Web -->
+    <!-- REMIX ICONS -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Titillium+Web:wght@700;900&display=swap"
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <!-- CUSTOM CSS -->
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&family=Space+Grotesk:wght@400;700&family=Space+Mono:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLE CSS -->
     <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/login.css" />
-    <title>Login / Register</title>
+    <!-- LOGIN CSS -->
+    <link rel="stylesheet" href="../styles/register.css" />
+    <title>Okumi - Register</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar-top">
-        <ul class="nav-flex-row">
-          <li class="nav-left">
-            <div class="nav-logo">
-              <a href="index.html"><h1>OkuForum</h1></a>
-            </div>
-          </li>
-          <li class="nav-right">
-            <div class="nav-btn">
-              <button class="btn btn-login" id="login-btn">Login</button>
-              <button class="btn btn-register" id="register-btn">
+    <main class="main" id="main">
+      <!-- NAVBAR -->
+      <header class="header">
+        <nav class="navbar" id="navbar">
+          <div class="logo-container">
+            <h1 class="nav-logo">
+              <a href="../templates/index.html">Okumi</a>
+            </h1>
+          </div>
+          <div class="anchors-container">
+            <a href="#" class="nav-link">Get Started</a
+            ><a href="#" class="nav-link">Read Docs</a
+            ><a href="#" class="nav-link">About Us</a>
+          </div>
+          <div class="btn-container">
+            <a href="../templates/login.html"
+              ><button class="btn btn-primary" id="btn-login">Login</button></a
+            ><a href="../templates/register.html"
+              ><button class="btn btn-secondary" id="btn-register">
                 Register
-              </button>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section class="main">
-      <section class="login-signup" id="login-signup">
-        <div class="container" id="login-container">
-          <h2>Login Now</h2>
-          <form action="#">
+              </button></a
+            >
+          </div>
+        </nav>
+      </header>
+      <!-- MAIN CONTENT -->
+      <div class="main-container" id="main-container">
+        <div class="main-wrapper">
+          <h2 class="title">Login Now</h2>
+          <form action="#" class="form-vertical" method="POST">
             <div class="form-control">
-              <input
-                type="text"
-                name="username"
-                id="l-username"
-                required
-                autocomplete="username"
-                accesskey="z"
-                autofocus
-              />
-              <label for="l-username">Username</label>
+              <div class="form-wrapper">
+                <input
+                  class="input-field"
+                  type="text"
+                  name="username"
+                  id="username"
+                  required
+                  maxlength="24"
+                  autocomplete="username"
+                  accesskey="z"
+                  autofocus
+                />
+                <div class="horizontal-rule"></div>
+              </div>
+              <label class="control-label" for="username">Username:</label>
             </div>
             <div class="form-control">
-              <input
-                type="password"
-                name="password"
-                id="l-password"
-                required
-                autocomplete="current-password"
-                accesskey="x"
-              />
-              <label for="l-password">Password</label>
+              <div class="form-wrapper">
+                <input
+                  class="input-field"
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                  maxlength="48"
+                  autocomplete="current-password"
+                  accesskey="x"
+                />
+                <div class="horizontal-rule"></div>
+              </div>
+              <label class="control-label" for="password">Password:</label>
             </div>
-
-            <button class="btn">Login</button>
-
-            <span class="bottom-text"
-              >Don't have an account?
-              <a href="#" id="register-btn">Register</a></span
+            <button class="btn btn-big btn-white">Login</button>
+            <span class="bottom-text">Don't have an account?</span>
+            <a
+              href="../templates/register.html"
+              class="after-bottom-text"
+              id="register-btn"
+              >Register</a
             >
           </form>
         </div>
-        <div class="container hidden" id="register-container">
-          <h2>Register Now</h2>
-          <form action="#">
-            <div class="form-control">
-              <input
-                type="text"
-                name="username"
-                id="r-username"
-                required
-                autofocus
-                autocomplete="username"
-                accesskey="z"
-              />
-              <label for="r-username">Username</label>
-            </div>
-            <div class="form-control">
-              <input
-                type="password"
-                name="password"
-                id="r-password"
-                required
-                autocomplete="new-password"
-                accesskey="x"
-              />
-              <label for="r-password">Password</label>
-            </div>
-            <div class="form-control">
-              <input
-                type="password"
-                name="repeat-password"
-                id="r-repeat-password"
-                required
-                autocomplete="new-password"
-                accesskey="c"
-              />
-              <label for="r-repeat-password">Repeat Password</label>
-            </div>
-
-            <button class="btn">Register</button>
-
-            <span class="bottom-text"
-              >Already have an account?
-              <a href="#" id="login-btn">Login Now</a></span
-            >
-          </form>
-        </div>
-      </section>
-    </section>
+      </div>
+    </main>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/login.js"></script>
   </body>
-  <script src="../scripts/login.js"></script>
 </html>

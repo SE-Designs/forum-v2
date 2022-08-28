@@ -40,21 +40,54 @@ body {
 }
 
 .after-title {
-  width: calc(100% - 120px);
-  min-width: 300px;
   margin: 0 auto;
   text-align: center;
   font-size: 1.5rem;
-  font-family: "Poppins", sans-serif;
-  color: var(--paragraph);
   font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.25;
+  color: var(--paragraph);
   margin-bottom: 20px;
 }
 
 .main-container .btn-container {
+  width: fit-content;
   margin: 30px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.main-container .btn-container .btn {
-  margin: 0 10px;
+/* Media Queries */
+
+@media only screen and (max-width: 1080px) {
+  body {
+    overflow-y: auto;
+  }
+
+  .main-wrapper {
+    width: calc(100% - 80px);
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .title,
+  .after-title {
+    text-align: left;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .after-title {
+    font-size: 1.125rem;
+  }
+
+  .main-container .btn-container {
+    margin: 20px 0 0 0;
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
 }
