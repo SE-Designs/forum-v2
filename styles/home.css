@@ -1,0 +1,135 @@
+:root {
+  --primary: #7dc81b;
+  --secondary: #0051ff;
+  --black: #080705;
+  --white: #f7e9e4;
+  --semi-black: #24333f;
+  --semi-white: #687680;
+  --paragraph: rgba(247, 233, 228, 0.75);
+  --shadow: rgba(8, 7, 5, 0.25);
+  --primary-shadow: rgba(125, 200, 27, 0.5);
+  --secondary-shadow: rgba(0, 81, 255, 0.5);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-with-side {
+  position: fixed;
+  top: 0;
+  left: 200px;
+  width: calc(100% - 200px);
+  height: 60px;
+  background-color: var(--black);
+  padding: 10px;
+  z-index: 5;
+}
+
+.logo-container {
+  height: 60px;
+}
+
+.left-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-container {
+  height: 40px;
+}
+
+.navbar-icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 100%;
+  color: var(--white);
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.navbar-icon:hover {
+  background-color: var(--semi-black);
+}
+
+.searchbar-container {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+}
+
+.search-input {
+  color: var(--white);
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+  width: 100%;
+  min-width: 120px;
+  height: 40px;
+  background-color: var(--black);
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  padding: 0 8px;
+
+  transition: all 0.4s;
+}
+
+.search-input:focus {
+  border: 2px solid var(--secondary);
+}
+
+.search-input:focus + .search-icon {
+  border-top: 2px solid var(--secondary);
+  border-right: 2px solid var(--secondary);
+  border-bottom: 2px solid var(--secondary);
+}
+
+.search-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: var(--white);
+  border-radius: 0 4px 4px 0;
+  background-color: var(--black);
+  border-top: 2px solid var(--primary);
+  border-right: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+  transition: all 0.4s;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: var(--secondary);
+  padding: 0 30px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+  min-width: 100px;
+}

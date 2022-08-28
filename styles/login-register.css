@@ -1,0 +1,140 @@
+:root {
+  --primary: #7dc81b;
+  --secondary: #0051ff;
+  --black: #080705;
+  --white: #f7e9e4;
+  --semi-black: #24333f;
+  --semi-white: #687680;
+  --paragraph: rgba(247, 233, 228, 0.75);
+  --shadow: rgba(8, 7, 5, 0.25);
+  --primary-shadow: rgba(125, 200, 27, 0.5);
+  --secondary-shadow: rgba(0, 81, 255, 0.5);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-wrapper {
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  mix-blend-mode: overlay;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.bottom-text {
+  text-align: center;
+  color: var(--paragraph);
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.after-bottom-text {
+  margin-top: 4px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Forms and Inputs */
+
+.control-label {
+  cursor: pointer;
+}
+
+.form-vertical {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.form-control {
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  border-radius: 4px;
+  padding: 4px 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+.control-label {
+  width: 100%;
+  text-align: left;
+  color: var(--white);
+  margin-bottom: 6px;
+  font-family: "Space Mono", monospace;
+}
+
+.input-field {
+  font-weight: 700;
+  color: var(--white);
+  /* border-radius: 4px; */
+  padding: 4px 0;
+  font-family: "Poppins", sans-serif;
+  border: 0;
+  background-color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1) inset;
+}
+
+.horizontal-rule {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  transition: all 0.4s;
+}
+
+.horizontal-shadow {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 30%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.4s;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1080px) {
+  body {
+    overflow-y: auto;
+  }
+
+  .main-wrapper {
+    width: calc(100% - 10px);
+  }
+}

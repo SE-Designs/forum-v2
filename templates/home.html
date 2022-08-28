@@ -103,112 +103,80 @@
     />
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="../styles/style.css" />
-    <!-- LOGIN CSS -->
-    <link rel="stylesheet" href="../styles/login-register.css" />
-    <title>Okumi - Register</title>
+    <!-- INDEX CSS -->
+    <link rel="stylesheet" href="../styles/home.css" />
+    <title>Okumi - Home</title>
   </head>
   <body>
     <main class="main" id="main">
       <!-- NAVBAR -->
-      <header class="header">
+      <header class="header-with-side">
         <nav class="navbar" id="navbar">
+          <div class="left-wrapper">
+            <div class="sidebar-container">
+              <div class="navbar-icon" id="sidebar-icon">
+                <i class="ri-menu-3-line"></i>
+              </div>
+            </div>
+            <div class="searchbar-container">
+              <input
+                type="search"
+                name="search"
+                class="search-input"
+                placeholder="Search..."
+                id="search-box"
+                autocomplete="off"
+                accesskey="f"
+              /><label class="search-icon" for="search">
+                <i class="ri-search-line"></i>
+              </label>
+            </div>
+          </div>
+          <!-- <div class="anchors-container">
+            <a href="#" class="nav-link">Get Started</a
+            ><a href="#" class="nav-link">Read Docs</a
+            ><a href="#" class="nav-link">About Us</a>
+          </div> -->
+          <div class="btn-container">
+            <div class="navbar-icon">
+              <i class="ri-notification-3-line"></i>
+            </div>
+            <div class="navbar-icon">
+              <i class="ri-moon-line"></i>
+            </div>
+          </div>
+        </nav>
+        <nav class="sidebar" id="sidebar">
           <div class="logo-container">
             <h1 class="nav-logo">
               <a href="../templates/index.html" accesskey="q">Okumi</a>
             </h1>
           </div>
-          <div class="anchors-container">
-            <a href="#" class="nav-link">Get Started</a
-            ><a href="#" class="nav-link">Read Docs</a
-            ><a href="#" class="nav-link">About Us</a>
-          </div>
+        </nav>
+      </header>
+      <!-- MAIN CONTENT -->
+      <!-- <div class="main-container" id="main-container">
+        <div class="main-wrapper">
+          <h2 class="title">Your Journey of Education starts Here!</h2>
+          <h3 class="after-title">
+            Education is vital for everyone. Discuss, Learn and Enjoy new, free
+            and open for all Okumi Forum
+          </h3>
           <div class="btn-container">
             <a href="../templates/login.html"
-              ><button class="btn btn-primary" id="btn-login">Login</button></a
-            ><a href="../templates/register.html"
-              ><button class="btn btn-secondary" id="btn-register">
+              ><button class="btn btn-big btn-black" id="btn-login">
+                Login
+              </button></a
+            ><a href="#"
+              ><button class="btn btn-big btn-white" id="btn-register">
                 Register
               </button></a
             >
           </div>
-        </nav>
-      </header>
-      <!-- MAIN CONTENT -->
-      <div class="main-container" id="main-container">
-        <div class="main-wrapper">
-          <h2 class="title bw-100">Register Now</h2>
-          <form action="#" class="form-vertical" method="POST">
-            <div class="form-control">
-              <div class="form-wrapper">
-                <input
-                  class="input-field"
-                  type="text"
-                  name="username"
-                  id="username"
-                  required
-                  maxlength="24"
-                  autocomplete="username"
-                  accesskey="z"
-                  autofocus
-                />
-                <div class="horizontal-rule">
-                  <div class="horizontal-shadow"></div>
-                </div>
-              </div>
-              <label class="control-label" for="username">Username:</label>
-            </div>
-            <div class="form-control">
-              <div class="form-wrapper">
-                <input
-                  class="input-field"
-                  type="password"
-                  name="password"
-                  id="password"
-                  required
-                  maxlength="48"
-                  autocomplete="current-password"
-                  accesskey="x"
-                />
-                <div class="horizontal-rule">
-                  <div class="horizontal-shadow"></div>
-                </div>
-              </div>
-              <label class="control-label" for="password">Password:</label>
-            </div>
-            <div class="form-control">
-              <div class="form-wrapper">
-                <input
-                  class="input-field"
-                  type="password"
-                  name="repeat-password"
-                  id="repeat-password"
-                  required
-                  maxlength="48"
-                  autocomplete="current-password"
-                  accesskey="c"
-                  autofocus
-                />
-                <div class="horizontal-rule">
-                  <div class="horizontal-shadow"></div>
-                </div>
-              </div>
-              <label class="control-label" for="repeat-password"
-                >Repeat Password:</label
-              >
-            </div>
-            <button class="btn bw-100 btn-white">Register</button>
-            <span class="bottom-text">Already have an account?</span>
-            <a
-              href="../templates/login.html"
-              class="after-bottom-text"
-              id="login-btn"
-              >Login</a
-            >
-          </form>
         </div>
-      </div>
+      </div> -->
     </main>
     <script src="../scripts/main.js"></script>
-    <script src="../scripts/register.js"></script>
+    <script src="../scripts/home.js"></script>
   </body>
 </html>

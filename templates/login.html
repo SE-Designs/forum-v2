@@ -104,8 +104,8 @@
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="../styles/style.css" />
     <!-- LOGIN CSS -->
-    <link rel="stylesheet" href="../styles/register.css" />
-    <title>Okumi - Register</title>
+    <link rel="stylesheet" href="../styles/login-register.css" />
+    <title>Okumi - Login</title>
   </head>
   <body>
     <main class="main" id="main">
@@ -114,7 +114,7 @@
         <nav class="navbar" id="navbar">
           <div class="logo-container">
             <h1 class="nav-logo">
-              <a href="../templates/index.html">Okumi</a>
+              <a href="../templates/index.html" accesskey="q">Okumi</a>
             </h1>
           </div>
           <div class="anchors-container">
@@ -136,7 +136,7 @@
       <!-- MAIN CONTENT -->
       <div class="main-container" id="main-container">
         <div class="main-wrapper">
-          <h2 class="title">Login Now</h2>
+          <h2 class="title bw-100">Login Now</h2>
           <form action="#" class="form-vertical" method="POST">
             <div class="form-control">
               <div class="form-wrapper">
@@ -151,7 +151,9 @@
                   accesskey="z"
                   autofocus
                 />
-                <div class="horizontal-rule"></div>
+                <div class="horizontal-rule">
+                  <div class="horizontal-shadow"></div>
+                </div>
               </div>
               <label class="control-label" for="username">Username:</label>
             </div>
@@ -167,11 +169,13 @@
                   autocomplete="current-password"
                   accesskey="x"
                 />
-                <div class="horizontal-rule"></div>
+                <div class="horizontal-rule">
+                  <div class="horizontal-shadow"></div>
+                </div>
               </div>
               <label class="control-label" for="password">Password:</label>
             </div>
-            <button class="btn btn-big btn-white">Login</button>
+            <button class="btn bw-100 btn-white">Login</button>
             <span class="bottom-text">Don't have an account?</span>
             <a
               href="../templates/register.html"
