@@ -15,8 +15,8 @@ toggleSide.addEventListener("click", () => {
     toggleSide.innerHTML = `<i class="ri-menu-2-line"></i>`;
     setTimeout(() => {
       visible.style.opacity = 1;
+      visible.innerText = "kumi";
     }, 300);
-    visible.innerText = "kumi";
     sidebarListTitles.forEach((el) => {
       el.style.display = "inline";
       setTimeout(() => {
@@ -26,14 +26,11 @@ toggleSide.addEventListener("click", () => {
   } else {
     toggleSide.innerHTML = `<i class="ri-menu-3-line"></i>`;
     visible.style.opacity = 0;
-    setTimeout(() => {
-      visible.innerText = "";
-    }, 400);
+    visible.innerText = "";
     sidebarListTitles.forEach((el) => {
       el.style.opacity = 0;
-      setTimeout(() => {
-        el.style.display = "none";
-      }, 200);
+      el.style.display = "none";
+      // setTimeout(() => {}, 200);
     });
   }
 });

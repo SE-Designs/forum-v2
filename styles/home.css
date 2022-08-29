@@ -1,10 +1,11 @@
+/* Light Mode */
 :root {
   --primary: #7dc81b;
   --secondary: #0051ff;
   --black: #080705;
   --white: #f7e9e4;
   --semi-black: #1f2225;
-  --semi-white: #cecece;
+  --semi-white: #c9c9c9;
   --paragraph: rgba(247, 233, 228, 0.75);
   --shadow: rgba(8, 7, 5, 0.25);
   --primary-shadow: rgba(125, 200, 27, 0.5);
@@ -17,8 +18,8 @@
   --secondary: #0051ff;
   --black: #f7e9e4;
   --white: #080705;
-  --semi-black: #1f2225;
-  --semi-white: #cecece;
+  --semi-black: #c9c9c9;
+  --semi-white: #1f2225;
   --paragraph: rgba(247, 233, 228, 0.75);
   --shadow: rgba(8, 7, 5, 0.25);
   --primary-shadow: rgba(125, 200, 27, 0.5);
@@ -84,7 +85,7 @@ body {
   color: var(--white);
   border-radius: 4px;
   border: 2px solid var(--black);
-  transition: all 0.4s;
+  transition: all 0.4s, border-color 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .navbar-icon:hover {
@@ -204,22 +205,19 @@ body {
   margin: 10px 0;
 }
 
-.sidebar-list:last-child {
-  align-self: flex-end;
-}
-
 .sidebar-item {
   position: relative;
+  max-width: 240px;
   width: calc(100% - 20px);
   height: 40px;
 }
 
 .sidebar-active-item {
   position: absolute;
-  top: 10px;
+  top: 12px;
   left: -10px;
   width: 2px;
-  height: 20px;
+  height: 16px;
   opacity: 0;
   border-radius: 0 10px 10px 0;
   background-color: var(--secondary);
@@ -228,11 +226,6 @@ body {
 
 .sidebar.active .sidebar-item {
   width: calc(100% - 20px);
-}
-
-.sidebar.active .sidebar-icon {
-  padding: 0 10px;
-  justify-content: flex-start;
 }
 
 .sidebar.active .sidebar-item-title {
@@ -245,8 +238,10 @@ body {
   height: 100%;
   border-radius: 4px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding: 12px;
+  transition: all 0.4s ease;
 }
 
 .sidebar-item-title {
@@ -260,8 +255,8 @@ body {
 
 .sidebar-icon:hover,
 .sidebar-icon:focus {
-  color: var(--white);
-  background-color: var(--black);
+  color: var(--black);
+  background-color: var(--white);
 }
 
 .sidebar-icon:active + .sidebar-active-item,
@@ -270,7 +265,9 @@ body {
 }
 
 .sidebar-icon.sidebar-active {
+  opacity: 1;
   color: var(--primary);
+  background-color: var(--white);
 }
 
 .sidebar-icon.sidebar-active + .sidebar-active-item {
@@ -284,6 +281,7 @@ body {
 }
 
 .horizontal-rule {
+  max-width: 240px;
   width: calc(100% - 40px);
   margin: 0 auto;
   height: 1px;
