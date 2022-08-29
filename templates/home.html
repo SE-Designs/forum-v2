@@ -118,7 +118,7 @@
                 <i class="ri-menu-3-line"></i>
               </div>
             </div>
-            <div class="searchbar-container">
+            <div class="searchbar-container" id="search-container">
               <input
                 type="search"
                 name="search"
@@ -134,8 +134,8 @@
             </div>
           </div>
           <div class="btn-container">
-            <div class="navbar-icon" id="toggle-icon" tabindex="4">
-              <a href="#"><i class="ri-moon-line"></i></a>
+            <div class="navbar-icon" id="create-post-icon" tabindex="4">
+              <i class="ri-chat-new-line"></i>
             </div>
             <div class="navbar-icon" id="notification-icon" tabindex="5">
               <i class="ri-notification-3-line"></i>
@@ -159,6 +159,46 @@
           </div>
           <div class="sidebar-wrapper">
             <div class="top-wrapper">
+              <ul class="sidebar-list sidebar-list-mobile">
+                <li class="sidebar-item sidebar-item-search">
+                  <div
+                    class="mobile-searchbar-container"
+                    id="mobile-search-container"
+                  >
+                    <input
+                      type="search"
+                      name="search"
+                      class="search-input"
+                      placeholder="Search..."
+                      id="mobile-search-box"
+                      tabindex="3"
+                      autocomplete="off"
+                      accesskey="s"
+                    /><label
+                      class="search-icon sided"
+                      for="search"
+                      id="mobile-search"
+                    >
+                      <i class="ri-search-line"></i>
+                    </label>
+                  </div>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-icon">
+                    <i class="ri-user-line"></i>
+                    <span class="sidebar-item-title">Profile</span>
+                  </a>
+                  <div class="sidebar-active-item"></div>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-icon">
+                    <i class="ri-notification-3-line"></i>
+                    <span class="sidebar-item-title">Notifications</span>
+                  </a>
+                  <div class="sidebar-active-item"></div>
+                </li>
+              </ul>
+              <div class="horizontal-rule"></div>
               <ul class="sidebar-list">
                 <li class="sidebar-item">
                   <a href="#" class="sidebar-icon sidebar-active">
@@ -195,11 +235,15 @@
             </div>
             <div class="bottom-wrapper">
               <ul class="sidebar-list">
-                <li class="sidebar-item">
+                <!-- <li class="sidebar-item">
                   <a href="#" class="sidebar-icon">
                     <i class="ri-external-link-line"></i>
                     <span class="sidebar-item-title">Source Code</span>
                   </a>
+                  <div class="sidebar-active-item"></div>
+                </li> -->
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-icon" id="toggle-icon"> </a>
                   <div class="sidebar-active-item"></div>
                 </li>
                 <li class="sidebar-item">
