@@ -110,11 +110,11 @@
   <body>
     <main class="main" id="main">
       <!-- NAVBAR -->
-      <header class="header-with-side">
+      <header class="header-with-side" id="header">
         <nav class="navbar" id="navbar">
           <div class="left-wrapper">
             <div class="sidebar-container">
-              <div class="navbar-icon" id="sidebar-icon">
+              <div class="navbar-icon" tabindex="2" id="toggleside">
                 <i class="ri-menu-3-line"></i>
               </div>
             </div>
@@ -125,32 +125,99 @@
                 class="search-input"
                 placeholder="Search..."
                 id="search-box"
+                tabindex="3"
                 autocomplete="off"
-                accesskey="f"
-              /><label class="search-icon" for="search">
+                accesskey="s"
+              /><label class="search-icon" for="search" id="search">
                 <i class="ri-search-line"></i>
               </label>
             </div>
           </div>
-          <!-- <div class="anchors-container">
-            <a href="#" class="nav-link">Get Started</a
-            ><a href="#" class="nav-link">Read Docs</a
-            ><a href="#" class="nav-link">About Us</a>
-          </div> -->
           <div class="btn-container">
-            <div class="navbar-icon">
+            <div class="navbar-icon" id="toggle-icon" tabindex="4">
+              <a href="#"><i class="ri-moon-line"></i></a>
+            </div>
+            <div class="navbar-icon" id="notification-icon" tabindex="5">
               <i class="ri-notification-3-line"></i>
             </div>
-            <div class="navbar-icon">
-              <i class="ri-moon-line"></i>
+            <div class="navbar-icon" id="profile-icon" tabindex="6">
+              <i class="ri-user-line"></i>
             </div>
           </div>
         </nav>
         <nav class="sidebar" id="sidebar">
-          <div class="logo-container">
+          <div class="nav-logo-container">
             <h1 class="nav-logo">
-              <a href="../templates/index.html" accesskey="q">Okumi</a>
+              <a
+                href="../templates/index.html"
+                tabindex="1"
+                accesskey="q"
+                id="nav-logo"
+                >O<span class="visible"></span
+              ></a>
             </h1>
+          </div>
+          <div class="sidebar-wrapper">
+            <div class="top-wrapper">
+              <ul class="sidebar-list">
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-icon sidebar-active">
+                    <i class="ri-home-line"></i>
+                    <span class="sidebar-item-title">Homepage</span>
+                  </a>
+                  <div class="sidebar-active-item"></div>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-icon">
+                    <i class="ri-discuss-line"></i>
+                    <span class="sidebar-item-title">Forums</span>
+                  </a>
+                  <div class="sidebar-active-item"></div>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-icon">
+                    <i class="ri-compass-line"></i>
+                    <span class="sidebar-item-title">Explore</span>
+                  </a>
+                  <div class="sidebar-active-item"></div>
+                </li>
+              </ul>
+              <div class="horizontal-rule"></div>
+              <ul class="sidebar-list">
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-icon">
+                    <i class="ri-external-link-line"></i>
+                    <span class="sidebar-item-title">Source Code</span>
+                  </a>
+                  <div class="sidebar-active-item"></div>
+                </li>
+              </ul>
+            </div>
+            <div class="bottom-wrapper">
+              <ul class="sidebar-list">
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-icon">
+                    <i class="ri-chat-new-line"></i>
+                    <span class="sidebar-item-title">New Post</span>
+                  </a>
+                  <div class="sidebar-active-item"></div>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-icon">
+                    <i class="ri-settings-3-line"></i>
+                    <span class="sidebar-item-title">Settings</span>
+                  </a>
+                  <div class="sidebar-active-item"></div>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-icon">
+                    <i class="ri-logout-box-line"></i>
+                    <span class="sidebar-item-title">Logout</span>
+                  </a>
+                  <div class="sidebar-active-item"></div>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>
