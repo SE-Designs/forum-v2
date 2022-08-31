@@ -38,6 +38,13 @@ const mobileSearchContainer = document.getElementById(
 const visible = document.querySelector(".visible");
 const mobileSearch = document.getElementById("mobile-search");
 
+const closeSidebar = document.getElementById("close-sidebar");
+closeSidebar.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+  header.classList.toggle("sided");
+  smoothSidebar();
+});
+
 toggleSide.addEventListener("click", () => {
   sidebar.classList.toggle("active");
   header.classList.toggle("sided");

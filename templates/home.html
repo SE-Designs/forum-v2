@@ -134,13 +134,28 @@
             </div>
           </div>
           <div class="btn-container">
-            <div class="navbar-icon" id="create-post-icon" tabindex="4">
+            <div
+              class="navbar-icon"
+              id="create-post-icon"
+              tabindex="4"
+              accesskey="c"
+            >
               <i class="ri-chat-new-line"></i>
             </div>
-            <div class="navbar-icon" id="notification-icon" tabindex="5">
+            <div
+              class="navbar-icon"
+              id="notification-icon"
+              tabindex="5"
+              accesskey="n"
+            >
               <i class="ri-notification-3-line"></i>
             </div>
-            <div class="navbar-icon" id="profile-icon" tabindex="6">
+            <div
+              class="navbar-icon"
+              id="profile-icon"
+              tabindex="6"
+              accesskey="p"
+            >
               <i class="ri-user-line"></i>
             </div>
           </div>
@@ -156,6 +171,9 @@
                 >O<span class="visible"></span
               ></a>
             </h1>
+            <div class="navbar-icon close-icon" id="close-sidebar">
+              <i class="ri-close-line"></i>
+            </div>
           </div>
           <div class="sidebar-wrapper">
             <div class="top-wrapper">
@@ -175,7 +193,7 @@
                       autocomplete="off"
                       accesskey="s"
                     /><label
-                      class="search-icon sided"
+                      class="search-icon"
                       for="search"
                       id="mobile-search"
                     >
@@ -184,14 +202,14 @@
                   </div>
                 </li>
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-icon">
+                  <a href="#" class="sidebar-icon" accesskey="p">
                     <i class="ri-user-line"></i>
                     <span class="sidebar-item-title">Profile</span>
                   </a>
                   <div class="sidebar-active-item"></div>
                 </li>
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-icon">
+                  <a href="#" class="sidebar-icon" accesskey="n">
                     <i class="ri-notification-3-line"></i>
                     <span class="sidebar-item-title">Notifications</span>
                   </a>
@@ -201,21 +219,21 @@
               <div class="horizontal-rule"></div>
               <ul class="sidebar-list">
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-icon sidebar-active">
+                  <a href="#" class="sidebar-icon sidebar-active" accesskey="h">
                     <i class="ri-home-line"></i>
                     <span class="sidebar-item-title">Homepage</span>
                   </a>
                   <div class="sidebar-active-item"></div>
                 </li>
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-icon">
+                  <a href="#" class="sidebar-icon" accesskey="f">
                     <i class="ri-discuss-line"></i>
                     <span class="sidebar-item-title">Forums</span>
                   </a>
                   <div class="sidebar-active-item"></div>
                 </li>
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-icon">
+                  <a href="#" class="sidebar-icon" accesskey="e">
                     <i class="ri-compass-line"></i>
                     <span class="sidebar-item-title">Explore</span>
                   </a>
@@ -225,10 +243,12 @@
               <div class="horizontal-rule"></div>
               <ul class="sidebar-list">
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-icon">
-                    <i class="ri-chat-new-line"></i>
-                    <span class="sidebar-item-title">New Post</span>
-                  </a>
+                  <a
+                    href="#"
+                    class="sidebar-icon"
+                    id="toggle-icon"
+                    accesskey="d"
+                  ></a>
                   <div class="sidebar-active-item"></div>
                 </li>
               </ul>
@@ -243,18 +263,14 @@
                   <div class="sidebar-active-item"></div>
                 </li> -->
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-icon" id="toggle-icon"> </a>
-                  <div class="sidebar-active-item"></div>
-                </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-icon">
+                  <a href="#" class="sidebar-icon" accesskey="t">
                     <i class="ri-settings-3-line"></i>
                     <span class="sidebar-item-title">Settings</span>
                   </a>
                   <div class="sidebar-active-item"></div>
                 </li>
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-icon">
+                  <a href="#" class="sidebar-icon" accesskey="l">
                     <i class="ri-logout-box-line"></i>
                     <span class="sidebar-item-title">Logout</span>
                   </a>
