@@ -9,7 +9,6 @@ toggleMode.innerHTML = lightMode;
 
 // DARK MODE:
 function switchTheme() {
-  console.log("ckick");
   if (toggleMode.classList.contains("dark")) {
     toggleMode.classList.remove("dark");
     toggleMode.innerHTML = "";
@@ -36,6 +35,7 @@ const mobileSearchContainer = document.getElementById(
 
 // const navLogo = document.getElementById("nav-logo");
 const visible = document.querySelector(".visible");
+const mobileClose = document.getElementById("close-sidebar");
 const mobileSearch = document.getElementById("mobile-search");
 
 const closeSidebar = document.getElementById("close-sidebar");
@@ -53,7 +53,6 @@ toggleSide.addEventListener("click", () => {
 
 mobileSearchContainer.addEventListener("click", () => {
   if (!sidebar.classList.contains("active")) {
-    console.log(!sidebar.classList.contains("active"));
     sidebar.classList.toggle("active");
     header.classList.toggle("sided");
     smoothSidebar();
@@ -64,10 +63,14 @@ function smoothSidebar() {
   const sidebarListTitles = document.querySelectorAll(".sidebar-item-title");
   if (sidebar.classList.contains("active")) {
     toggleSide.innerHTML = `<i class="ri-menu-2-line"></i>`;
+    if (window.innerWidth <= 380) {
+      mobileClose.style.display = "flex";
+    }
     mobileSearch.classList.add("sided");
     setTimeout(() => {
       visible.style.opacity = 1;
       visible.innerText = "kumi";
+      mobileClose.style.opacity = 1;
     }, 300);
     sidebarListTitles.forEach((el) => {
       el.style.display = "inline";
@@ -78,6 +81,7 @@ function smoothSidebar() {
   } else {
     toggleSide.innerHTML = `<i class="ri-menu-3-line"></i>`;
     visible.style.opacity = 0;
+    mobileClose.style.display = "none";
     setTimeout(() => {
       mobileSearch.classList.remove("sided");
     }, 750);

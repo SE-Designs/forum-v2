@@ -46,7 +46,7 @@ body {
   height: 100vh;
 }
 
-/* Navbar First */
+/* Navbar */
 
 .header {
   position: fixed;
@@ -68,7 +68,7 @@ body {
   gap: 10px;
 }
 
-.main-container {
+.main-gradient-back {
   position: relative;
   top: 60px;
   left: 0;
@@ -133,6 +133,7 @@ body {
 
 .btn-container {
   display: flex;
+  gap: 10px;
 }
 
 .navbar .btn-container {
@@ -141,8 +142,23 @@ body {
   align-items: center;
 }
 
-.navbar .btn-container a {
-  margin: 0 10px;
+/* Homepage */
+
+.main-back {
+  position: relative;
+  width: 100%;
+  top: 60px;
+  left: 60px;
+  padding: 20px;
+  transition: all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.header-with-side.sided + .main-back {
+  left: 200px;
+}
+
+svg {
+  border-radius: 50%;
 }
 
 /* Buttons */
@@ -244,6 +260,12 @@ body {
 
   .anchors-container {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .main-gradient-back {
+    padding: 40px 0;
   }
 }
 

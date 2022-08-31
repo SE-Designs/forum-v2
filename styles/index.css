@@ -17,7 +17,7 @@ body {
   overflow: hidden;
 }
 
-.main-container {
+.main-gradient-back {
   display: flex;
   justify-content: center;
 }
@@ -85,7 +85,7 @@ body {
     font-size: 1.125rem;
   }
 
-  .main-container .btn-container {
+  .main-gradient-back .btn-container {
     margin: 20px 0 0 0;
     justify-content: flex-start;
     align-self: flex-start;

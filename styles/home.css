@@ -98,6 +98,29 @@ body {
   border: 2px solid var(--semi-black);
 }
 
+.navbar-icon:focus .profile-img {
+  opacity: 0.85;
+}
+
+.profile-img {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.profile-img > img {
+  width: 38px;
+  height: 38px;
+  border: 2px solid var(--semi-white);
+  border-radius: 4px;
+  background-color: var(--semi-white);
+  transition: all 0.4s;
+}
+
+.profile-img > img:hover {
+  opacity: 0.85;
+}
+
 .searchbar-container {
   position: relative;
   display: flex;
@@ -327,6 +350,7 @@ body {
 .close-icon {
   display: none;
   height: 40px;
+  opacity: 0;
 }
 
 /* Media Queries */
@@ -362,10 +386,6 @@ body {
   .sidebar.active .nav-logo-container {
     justify-content: space-between;
     padding: 10px 10px 10px 40px;
-  }
-
-  .sidebar.active .close-icon {
-    display: flex;
   }
 
   .sidebar.active .sidebar-active-item {

@@ -156,7 +156,12 @@
               tabindex="6"
               accesskey="p"
             >
-              <i class="ri-user-line"></i>
+              <a href="#" class="profile-img" id="profile-img">
+                <img
+                  src="https://source.boringavatars.com/beam/40/someone?square&colors=7dc81b,8ACD4F,26E4B9,0051ff,47139A"
+                  alt=""
+                />
+              </a>
             </div>
           </div>
         </nav>
@@ -215,11 +220,26 @@
                   </a>
                   <div class="sidebar-active-item"></div>
                 </li>
+                <li class="sidebar-item">
+                  <a
+                    href="../templates/create-post.html"
+                    class="sidebar-icon"
+                    accesskey="c"
+                  >
+                    <i class="ri-chat-new-line"></i>
+                    <span class="sidebar-item-title">New Post</span>
+                  </a>
+                  <div class="sidebar-active-item"></div>
+                </li>
               </ul>
               <div class="horizontal-rule"></div>
               <ul class="sidebar-list">
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-icon sidebar-active" accesskey="h">
+                  <a
+                    href="../templates/home.html"
+                    class="sidebar-icon sidebar-active"
+                    accesskey="h"
+                  >
                     <i class="ri-home-line"></i>
                     <span class="sidebar-item-title">Homepage</span>
                   </a>
@@ -255,13 +275,17 @@
             </div>
             <div class="bottom-wrapper">
               <ul class="sidebar-list">
-                <!-- <li class="sidebar-item">
-                  <a href="#" class="sidebar-icon">
+                <li class="sidebar-item">
+                  <a
+                    href="https://github.com/SE-Designs/forum-v2"
+                    class="sidebar-icon"
+                    target="_blank"
+                  >
                     <i class="ri-external-link-line"></i>
                     <span class="sidebar-item-title">Source Code</span>
                   </a>
                   <div class="sidebar-active-item"></div>
-                </li> -->
+                </li>
                 <li class="sidebar-item">
                   <a href="#" class="sidebar-icon" accesskey="t">
                     <i class="ri-settings-3-line"></i>
@@ -282,26 +306,21 @@
         </nav>
       </header>
       <!-- MAIN CONTENT -->
-      <!-- <div class="main-container" id="main-container">
+      <div class="main-back" id="main-back">
         <div class="main-wrapper">
-          <h2 class="title">Your Journey of Education starts Here!</h2>
-          <h3 class="after-title">
-            Education is vital for everyone. Discuss, Learn and Enjoy new, free
-            and open for all Okumi Forum
-          </h3>
           <div class="btn-container">
             <a href="../templates/login.html"
               ><button class="btn btn-big btn-black" id="btn-login">
                 Login
               </button></a
             ><a href="#"
-              ><button class="btn btn-big btn-white" id="btn-register">
+              ><button class="btn btn-big btn-primary" id="btn-register">
                 Register
               </button></a
             >
           </div>
         </div>
-      </div> -->
+      </div>
     </main>
     <script src="../scripts/main.js"></script>
     <script src="../scripts/home.js"></script>

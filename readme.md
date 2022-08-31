@@ -43,8 +43,50 @@ bla-bla-bla
 
 #### **Frontend Structure:**
 
+```console
+├── assets/
+│   └── favicon/
+│   |   └── ...
+|   └── images/
+│       └── ...
+├── templates/ [.html]
+|   └── index
+|   └── login
+|   └── register
+|   └── profile/settings
+|   └── create-post
+|   └── app/home
+|   └── post
+├── styles/ [.css]
+|   └── style
+|   └── index
+|   └── login-register
+|   └── profile/settings
+|   └── create-post
+|   └── app/home
+|   └── post
+├── scripts/ [.js]
+|   └── main
+|   └── index
+|   └── login
+|   └── register
+|   └── profile/settings
+|   └── create-post
+|   └── app/home
+|   └── post
+├──────────────────── Okumi Forum Frontend Structure
+```
+
 #### **Used Libraries:**
 
 bla-bla-bla
 
 #### **Misc:**
+
+##### **TODO:**
+
+1. index, login, register pages [x]
+2. home navbar, sidebar, dark mode [x]
+3. create post, profile pages [-]
+4. app/home init [-]
+5. app/home upgraded [-]

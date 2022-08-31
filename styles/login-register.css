@@ -17,13 +17,13 @@ body {
   overflow: hidden;
 }
 
-.main-container {
+.main-gradient-back {
   display: flex;
   justify-content: center;
 }
 
 .main-wrapper {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -37,7 +37,7 @@ body {
   font-weight: 700;
   font-family: "Space Mono", monospace;
   color: var(--white);
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .bottom-text {
@@ -55,6 +55,30 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.profile-picture-container {
+  width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: var(--white);
+}
+
+.profile-picture-container img {
+  border-radius: 4px;
+}
+
+.profile-picture-container h5 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: var(--black);
+  font-size: 0.75rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+
 /* Forms and Inputs */
 
 .control-label {
@@ -62,12 +86,14 @@ body {
 }
 
 .form-vertical {
+  width: 280px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 
 .form-control {
+  width: 100%;
   display: flex;
   flex-flow: column-reverse;
   justify-content: center;
@@ -75,6 +101,7 @@ body {
 }
 
 .form-wrapper {
+  width: 100%;
   border-radius: 4px;
   padding: 4px 6px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -92,7 +119,7 @@ body {
 .input-field {
   font-weight: 700;
   color: var(--white);
-  /* border-radius: 4px; */
+  width: 100%;
   padding: 4px 0;
   font-family: "Poppins", sans-serif;
   border: 0;
@@ -136,5 +163,12 @@ input:-webkit-autofill:active {
 
   .main-wrapper {
     width: calc(100% - 10px);
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .form-vertical {
+    max-width: 280px;
+    width: calc(100vw - 20px);
   }
 }
