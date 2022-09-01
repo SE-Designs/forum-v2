@@ -1,35 +1,15 @@
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.main-gradient-back {
-  display: flex;
-  justify-content: center;
-}
-
-.main-wrapper {
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .title {
-  mix-blend-mode: overlay;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
   font-family: "Space Mono", monospace;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 40px;
 }
 
 .bottom-text {
   text-align: center;
-  color: var(--paragraph);
+  color: var(--black);
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
 }
@@ -38,32 +18,17 @@ body {
   margin-top: 4px;
   font-weight: 700;
   text-align: center;
-  color: var(--white);
+  color: var(--secondary);
   font-family: "Poppins", sans-serif;
 }
 
-.profile-picture-container {
-  width: 100%;
-  padding: 6px;
-  border-radius: 6px;
-  display: flex;
-  justify-content: flex-start;
+.main-wrapper .btn-container {
+  width: 75%;
+  max-width: 520px;
+  min-width: 160px;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  background-color: var(--white);
-}
-
-.profile-picture-container img {
-  border-radius: 4px;
-}
-
-.profile-picture-container h5 {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  color: var(--black);
-  font-size: 0.75rem;
-  font-family: "Space Grotesk", sans-serif;
 }
 
 /* Forms and Inputs */
@@ -73,7 +38,9 @@ body {
 }
 
 .form-vertical {
-  width: 280px;
+  width: 75%;
+  max-width: 520px;
+  min-width: 160px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -93,12 +60,13 @@ body {
   padding: 4px 6px;
   background-color: rgba(255, 255, 255, 0.1);
   margin-bottom: 20px;
+  background-color: var(--black);
 }
 
 .control-label {
   width: 100%;
   text-align: left;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 6px;
   font-family: "Space Mono", monospace;
 }
@@ -113,6 +81,14 @@ body {
   background-color: transparent;
 }
 
+textarea.input-field {
+  font-size: 0.75rem;
+}
+
+textarea.input-field {
+  resize: vertical;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -120,12 +96,13 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1) inset;
 }
 
-.horizontal-rule {
+.main-back .horizontal-rule {
+  max-width: 520px;
   position: relative;
   width: 100%;
   margin: 0 auto;
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--secondary);
   border-radius: 2px;
   transition: all 0.4s;
 }
@@ -144,8 +121,8 @@ input:-webkit-autofill:active {
 /* Media Queries */
 
 @media only screen and (max-width: 1080px) {
-  body {
-    overflow-y: auto;
+  .main-back {
+    padding: 40px 20px;
   }
 
   .main-wrapper {
@@ -154,8 +131,11 @@ input:-webkit-autofill:active {
 }
 
 @media only screen and (max-width: 580px) {
-  .form-vertical {
-    max-width: 280px;
-    width: calc(100vw - 20px);
+  .main-back {
+    padding: 40px 5px;
+  }
+
+  .main-wrapper .btn-container {
+    flex-flow: column nowrap;
   }
 }

@@ -1,16 +1,3 @@
-:root {
-  --primary: #7dc81b;
-  --secondary: #0051ff;
-  --black: #080705;
-  --white: #f7e9e4;
-  --semi-black: #1f2225;
-  --semi-white: #687680;
-  --paragraph: rgba(247, 233, 228, 0.75);
-  --shadow: rgba(8, 7, 5, 0.25);
-  --primary-shadow: rgba(125, 200, 27, 0.5);
-  --secondary-shadow: rgba(0, 81, 255, 0.5);
-}
-
 body {
   width: 100vw;
   height: 100vh;

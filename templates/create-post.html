@@ -105,9 +105,9 @@
     <link rel="stylesheet" href="../styles/style.css" />
     <!-- APP CSS -->
     <link rel="stylesheet" href="../styles/app.css" />
-    <!-- INDEX CSS -->
-    <link rel="stylesheet" href="../styles/home.css" />
-    <title>Okumi - Home</title>
+    <!-- CREATE POST CSS -->
+    <link rel="stylesheet" href="../styles/create-post.css" />
+    <title>Okumi - New Post</title>
   </head>
   <body>
     <main class="main" id="main">
@@ -138,21 +138,21 @@
           <div class="btn-container">
             <a
               href="../templates/create-post.html"
-              class="navbar-icon"
+              class="navbar-icon navbar-active"
               id="create-post-icon"
               tabindex="4"
               accesskey="c"
             >
               <i class="ri-chat-new-line"></i>
             </a>
-            <div
+            <a
               class="navbar-icon"
               id="notification-icon"
               tabindex="5"
               accesskey="n"
             >
               <i class="ri-notification-3-line"></i>
-            </div>
+            </a>
             <div
               class="navbar-icon"
               id="profile-icon"
@@ -162,7 +162,7 @@
               <a href="#" class="profile-img" id="profile-img">
                 <img
                   src="https://source.boringavatars.com/beam/40/someone?square&colors=7dc81b,8ACD4F,26E4B9,0051ff,47139A"
-                  alt=""
+                  alt="Profile"
                 />
               </a>
             </div>
@@ -226,7 +226,7 @@
                 <li class="sidebar-item">
                   <a
                     href="../templates/create-post.html"
-                    class="sidebar-icon"
+                    class="sidebar-icon sidebar-active"
                     accesskey="c"
                   >
                     <i class="ri-chat-new-line"></i>
@@ -240,7 +240,7 @@
                 <li class="sidebar-item">
                   <a
                     href="../templates/home.html"
-                    class="sidebar-icon sidebar-active"
+                    class="sidebar-icon"
                     accesskey="h"
                   >
                     <i class="ri-home-line"></i>
@@ -311,21 +311,93 @@
       <div class="main-back" id="main-back">
         <div class="main-wrapper">
           <div class="btn-container">
-            <a href="../templates/login.html"
-              ><button class="btn btn-big btn-black" id="btn-login">
-                Login
-              </button></a
-            ><a href="#"
-              ><button class="btn btn-big btn-primary" id="btn-register">
-                Register
-              </button></a
+            <button
+              class="btn btn-primary btn-back"
+              id="btn-back"
+              accesskey="b"
             >
+              <i class="ri-arrow-go-back-line"></i>
+            </button>
           </div>
+          <h2 class="title bw-100">New Post</h2>
+          <form action="#" class="form-vertical" method="POST">
+            <div class="form-control">
+              <div class="form-wrapper">
+                <input
+                  class="input-field"
+                  type="text"
+                  name="title"
+                  id="title"
+                  required
+                  maxlength="100"
+                  autocomplete="off"
+                  accesskey="1"
+                  autofocus
+                />
+                <div class="horizontal-rule">
+                  <div class="horizontal-shadow"></div>
+                </div>
+              </div>
+              <label class="control-label" for="title"
+                >Title: max 100 symbols</label
+              >
+            </div>
+            <div class="form-control">
+              <div class="form-wrapper">
+                <input
+                  class="input-field"
+                  type="text"
+                  name="tags"
+                  id="tags"
+                  required
+                  maxlength="100"
+                  autocomplete="off"
+                  accesskey="2"
+                />
+                <div class="horizontal-rule">
+                  <div class="horizontal-shadow"></div>
+                </div>
+              </div>
+              <label class="control-label" for="tags"
+                >Tags: max 5 tags, divided by `space`</label
+              >
+            </div>
+            <div class="form-control">
+              <div class="form-wrapper">
+                <textarea
+                  class="input-field"
+                  name="message"
+                  id="message"
+                  required
+                  maxlength="2400"
+                  accesskey="3"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <div class="horizontal-rule">
+                  <div class="horizontal-shadow"></div>
+                </div>
+              </div>
+              <label class="control-label" for="message"
+                >Message: max 2400 symbols</label
+              >
+            </div>
+            <button class="btn bw-100 btn-primary">Create Post</button>
+            <span class="bottom-text"
+              >Additionally you can attach the photo:</span
+            >
+            <a
+              href="../templates/register.html"
+              class="after-bottom-text"
+              id="upload-image"
+              >Click here +</a
+            >
+          </form>
         </div>
       </div>
     </main>
     <script src="../scripts/main.js"></script>
     <script src="../scripts/app.js"></script>
-    <script src="../scripts/home.js"></script>
+    <script src="../scripts/create-post.js"></script>
   </body>
 </html>

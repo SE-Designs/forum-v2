@@ -13,10 +13,14 @@
 
 Web forum is a website or section of a website that allows visitors to communicate with each other by posting messages.
 
+---
+
 ### **Tech Stack:**
 
 - **Backend:** Golang, SQLite
 - **Frontend:** HTML, CSS, JavaScript
+
+---
 
 ### **Objectives:**
 
@@ -35,11 +39,17 @@ This project consists in creating a web forum that allows :
 
 ### **Authors:** @mixturegg and @abutalif
 
+---
+
 #### **Usage:** How to run
 
 bla-bla-bla
 
+---
+
 #### **Backend Structure:**
+
+---
 
 #### **Frontend Structure:**
 
@@ -55,7 +65,7 @@ bla-bla-bla
 |   └── register
 |   └── profile/settings
 |   └── create-post
-|   └── app/home
+|   └── home
 |   └── post
 ├── styles/ [.css]
 |   └── style
@@ -63,7 +73,8 @@ bla-bla-bla
 |   └── login-register
 |   └── profile/settings
 |   └── create-post
-|   └── app/home
+|   └── home
+|   └── app
 |   └── post
 ├── scripts/ [.js]
 |   └── main
@@ -72,21 +83,38 @@ bla-bla-bla
 |   └── register
 |   └── profile/settings
 |   └── create-post
-|   └── app/home
+|   └── home
+|   └── app
 |   └── post
 ├──────────────────── Okumi Forum Frontend Structure
 ```
 
+---
+
 #### **Used Libraries:**
 
-bla-bla-bla
+##### **-Frameworks & Libraries**
+
+- ?
+
+##### **-APIs & CDNs**
+
+- CSS Meyer Resetter
+- Remix Icons 2.5.0
+- Google Fonts
+
+##### **-Others**
+
+- BoringAvatars
+
+---
 
 #### **Misc:**
 
 ##### **TODO:**
 
-1. index, login, register pages [x]
-2. home navbar, sidebar, dark mode [x]
-3. create post, profile pages [-]
-4. app/home init [-]
-5. app/home upgraded [-]
+- [x] index, login, register pages
+- [x] home navbar, sidebar, dark mode
+- [ ] create post post, profile pages
+- [ ] app/home init
+- [ ] app/home upgraded

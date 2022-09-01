@@ -1,0 +1,76 @@
+.main-wrapper .btn-container {
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 1.75rem;
+  font-style: italic;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.tags-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px 0 20px;
+  gap: 6px;
+}
+
+.tag {
+  line-height: 1.6;
+  font-weight: 700;
+  color: var(--white);
+  border-radius: 4px;
+  padding: 2px 6px;
+  background-color: var(--primary);
+}
+
+.tag::before {
+  content: "•";
+  margin-right: 2px;
+}
+
+.message {
+  color: var(--black);
+  opacity: 0.8;
+  text-align: justify;
+  line-height: 1.2;
+}
+
+.right-side {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1080px) {
+  .main-back {
+    padding: 40px 20px;
+  }
+
+  .main-wrapper {
+    width: calc(100% - 10px);
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .main-back {
+    padding: 40px 5px;
+  }
+
+  .main-wrapper .btn-container {
+    flex-flow: column nowrap;
+  }
+}
