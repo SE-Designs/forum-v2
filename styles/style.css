@@ -80,7 +80,7 @@ body {
 }
 
 .main-gradient-back {
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   position: relative;
   top: 60px;
   left: 0;
@@ -163,7 +163,7 @@ body {
   background-color: var(--white);
   position: absolute;
   width: calc(100% - 60px);
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   top: 60px;
   left: 60px;
   padding: 40px;

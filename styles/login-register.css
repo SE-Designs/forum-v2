@@ -30,12 +30,12 @@ body {
 .bottom-text {
   text-align: center;
   color: var(--paragraph);
-  margin-top: 20px;
+  margin: 20px 0 10px 0;
   font-family: "Poppins", sans-serif;
 }
 
 .after-bottom-text {
-  margin-top: 4px;
+  border-bottom: 2px solid var(--white);
   font-weight: 700;
   text-align: center;
   color: var(--white);
