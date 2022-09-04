@@ -1,0 +1,163 @@
+.main-wrapper {
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cards-list {
+  width: 70%;
+  max-width: 920px;
+  min-width: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body {
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 4px;
+  border: 2px solid var(--black);
+  padding: 20px;
+  gap: 10px;
+}
+
+.card-top {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 25px;
+}
+
+.card-info {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.card-info h3 {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  color: var(--semi-black);
+  text-align: justify;
+}
+
+.card-body .btn-container {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 40px;
+}
+
+.card-body .horizontal-rule {
+  width: 100%;
+  max-width: 100%;
+  margin: 10px 0;
+  height: 1px;
+}
+
+.card-bottom {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.card-bottom-left {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+}
+
+.card-bottom-left > img {
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.card-bottom-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-bottom-right i {
+  margin-left: 4px;
+}
+
+.right-aside {
+  max-width: 240px;
+  width: calc(30% - 20px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tags-card {
+  color: var(--semi-black);
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--semi-black);
+  border-radius: 4px;
+}
+
+.right-aside h5 {
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 8px;
+}
+
+.right-aside img {
+  border-radius: 4px;
+}
+
+.right-aside .horizontal-rule {
+  width: 100%;
+  background-color: var(--semi-black);
+}
+
+ul {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+.tag {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.tag i {
+  color: var(--secondary);
+}
+
+.tag div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  width: fit-content;
+  gap: 10px;
+}

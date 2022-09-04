@@ -143,7 +143,7 @@
               tabindex="4"
               accesskey="c"
             >
-              <i class="ri-chat-new-line"></i>
+              <i class="ri-add-box-line"></i>
             </a>
             <div
               class="navbar-icon"
@@ -153,19 +153,20 @@
             >
               <i class="ri-notification-3-line"></i>
             </div>
-            <div
+            <a
+              href="../templates/profile.html"
               class="navbar-icon"
               id="profile-icon"
               tabindex="6"
               accesskey="p"
             >
-              <a href="#" class="profile-img" id="profile-img">
+              <div class="profile-img" id="profile-img">
                 <img
                   src="https://source.boringavatars.com/beam/40/someone?square&colors=7dc81b,8ACD4F,26E4B9,0051ff,47139A"
-                  alt=""
+                  alt="Profile"
                 />
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
         </nav>
         <nav class="sidebar" id="sidebar">
@@ -210,7 +211,11 @@
                   </div>
                 </li>
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-icon" accesskey="p">
+                  <a
+                    href="../templates/profile.html"
+                    class="sidebar-icon"
+                    accesskey="p"
+                  >
                     <i class="ri-user-line"></i>
                     <span class="sidebar-item-title">Profile</span>
                   </a>
@@ -229,7 +234,7 @@
                     class="sidebar-icon"
                     accesskey="c"
                   >
-                    <i class="ri-chat-new-line"></i>
+                    <i class="ri-add-box-line"></i>
                     <span class="sidebar-item-title">New Post</span>
                   </a>
                   <div class="sidebar-active-item"></div>
@@ -249,14 +254,22 @@
                   <div class="sidebar-active-item"></div>
                 </li>
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-icon" accesskey="f">
+                  <a
+                    href="../templates/home.html"
+                    class="sidebar-icon"
+                    accesskey="f"
+                  >
                     <i class="ri-discuss-line"></i>
                     <span class="sidebar-item-title">Forums</span>
                   </a>
                   <div class="sidebar-active-item"></div>
                 </li>
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-icon" accesskey="e">
+                  <a
+                    href="../templates/home.html"
+                    class="sidebar-icon"
+                    accesskey="e"
+                  >
                     <i class="ri-compass-line"></i>
                     <span class="sidebar-item-title">Explore</span>
                   </a>
@@ -285,7 +298,11 @@
                   <div class="sidebar-active-item"></div>
                 </li>
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-icon" accesskey="t">
+                  <a
+                    href="../templates/settings.html"
+                    class="sidebar-icon"
+                    accesskey="t"
+                  >
                     <i class="ri-settings-3-line"></i>
                     <span class="sidebar-item-title">Settings</span>
                   </a>
@@ -310,17 +327,163 @@
       <!-- MAIN CONTENT -->
       <div class="main-back" id="main-back">
         <div class="main-wrapper">
-          <div class="btn-container">
-            <a href="../templates/login.html"
-              ><button class="btn btn-big btn-black" id="btn-login">
-                Login
-              </button></a
-            ><a href="#"
-              ><button class="btn btn-big btn-primary" id="btn-register">
-                Register
-              </button></a
-            >
-          </div>
+          <section class="cards-list">
+            <div class="cards">
+              <div class="card-body">
+                <div class="card-top">
+                  <div class="card-info">
+                    <h3><a href="#">Lorem ipsum dolor sit.</a></h3>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Numquam, obcaecati ipsum sapiente soluta rerum animi!
+                      Magni fuga facere quos ea.
+                    </p>
+                  </div>
+                  <div class="btn-container">
+                    <button class="btn btn-secondary">
+                      <i class="ri-thumb-up-line"></i>
+                    </button>
+                    <button class="btn btn-secondary">
+                      <i class="ri-thumb-down-line"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="horizontal-rule"></div>
+                <div class="card-bottom">
+                  <a href="#" class="card-bottom-left">
+                    <img
+                      src="https://source.boringavatars.com/beam/40/someone?square&colors=7dc81b,8ACD4F,26E4B9,0051ff,47139A"
+                      alt="Profile"
+                    />
+                    <h4>@mixturegg</h4>
+                  </a>
+                  <a href="#" class="card-bottom-right">
+                    <button class="btn btn-primary">
+                      20 comments <i class="ri-chat-forward-line"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card-body">
+                <div class="card-top">
+                  <div class="card-info">
+                    <h3><a href="#">Lorem ipsum dolor sit.</a></h3>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Numquam, obcaecati ipsum sapiente soluta rerum animi!
+                      Magni fuga facere quos ea.
+                    </p>
+                  </div>
+                  <div class="btn-container">
+                    <button class="btn btn-secondary">
+                      <i class="ri-thumb-up-line"></i>
+                    </button>
+                    <button class="btn btn-secondary">
+                      <i class="ri-thumb-down-line"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="horizontal-rule"></div>
+                <div class="card-bottom">
+                  <a href="#" class="card-bottom-left">
+                    <img
+                      src="https://source.boringavatars.com/beam/40/someone?square&colors=7dc81b,8ACD4F,26E4B9,0051ff,47139A"
+                      alt="Profile"
+                    />
+                    <h4>@mixturegg</h4>
+                  </a>
+                  <a href="#" class="card-bottom-right">
+                    <button class="btn btn-primary">
+                      20 comments <i class="ri-chat-forward-line"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <aside class="right-aside">
+            <button class="btn btn-black bw-100">Start a New Topic</button>
+            <section class="tags-card">
+              <h5>Top Users:</h5>
+              <ul>
+                <li>
+                  <a href="#" class="tag">
+                    <div class="img-container">
+                      <img
+                        src="https://source.boringavatars.com/beam/40/someone?square&colors=7dc81b,8ACD4F,26E4B9,0051ff,47139A"
+                      />
+                      @hards
+                    </div>
+
+                    <div>12.2k <i class="ri-arrow-right-up-line"></i></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="tag">
+                    <div class="img-container">
+                      <img
+                        src="https://source.boringavatars.com/beam/40/someone?square&colors=7dc81b,8ACD4F,26E4B9,0051ff,47139A"
+                      />
+                      @hards
+                    </div>
+
+                    <div>12.2k <i class="ri-arrow-right-up-line"></i></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="tag">
+                    <div class="img-container">
+                      <img
+                        src="https://source.boringavatars.com/beam/40/someone?square&colors=7dc81b,8ACD4F,26E4B9,0051ff,47139A"
+                      />
+                      @hards
+                    </div>
+
+                    <div>12.2k <i class="ri-arrow-right-up-line"></i></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="tag">
+                    <div class="img-container">
+                      <img
+                        src="https://source.boringavatars.com/beam/40/someone?square&colors=7dc81b,8ACD4F,26E4B9,0051ff,47139A"
+                      />
+                      @hards
+                    </div>
+
+                    <div>12.2k <i class="ri-arrow-right-up-line"></i></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="tag">
+                    <div class="img-container">
+                      <img
+                        src="https://source.boringavatars.com/beam/40/someone?square&colors=7dc81b,8ACD4F,26E4B9,0051ff,47139A"
+                      />
+                      @hards
+                    </div>
+
+                    <div>12.2k <i class="ri-arrow-right-up-line"></i></div>
+                  </a>
+                </li>
+                <div class="horizontal-rule"></div>
+                <li>
+                  <a href="#" class="tag">
+                    <div class="img-container">
+                      <img
+                        src="https://source.boringavatars.com/beam/40/someone?square&colors=7dc81b,8ACD4F,26E4B9,0051ff,47139A"
+                      />
+                      @hards
+                    </div>
+
+                    <div>12.2k <i class="ri-arrow-right-up-line"></i></div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </aside>
         </div>
       </div>
     </main>
