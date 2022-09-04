@@ -115,6 +115,6 @@ bla-bla-bla
 
 - [x] index, login, register pages
 - [x] home navbar, sidebar, dark mode
-- [ ] create post post, profile pages
+- [x] create-post, post, profile pages
 - [ ] app/home init
 - [ ] app/home upgraded

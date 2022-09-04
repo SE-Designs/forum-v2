@@ -259,7 +259,8 @@
 }
 
 .sidebar-icon.sidebar-active:hover {
-  background-color: var(--white);
+  color: var(--black);
+  background-color: var(--primary);
 }
 
 .sidebar-icon.sidebar-active + .sidebar-active-item {
