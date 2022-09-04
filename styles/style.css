@@ -11,7 +11,7 @@
   --black: #080705;
   --white: #f7e9e4;
   --semi-black: #1f2225;
-  --semi-white: #c9c9c9;
+  --semi-white: rgb(218, 203, 203);
   --paragraph: rgba(247, 233, 228, 0.75);
   --shadow: rgba(8, 7, 5, 0.25);
   --primary-shadow: rgba(125, 200, 27, 0.5);
@@ -24,7 +24,7 @@
   --secondary: #0051ff;
   --black: #f7e9e4;
   --white: #080705;
-  --semi-black: #c9c9c9;
+  --semi-black: rgb(218, 203, 203);
   --semi-white: #1f2225;
   --paragraph: rgba(247, 233, 228, 0.75);
   --shadow: rgba(8, 7, 5, 0.25);
@@ -202,7 +202,7 @@ body {
 }
 
 .btn-secondary {
-  color: var(--white);
+  color: #f7e9e4;
   background-color: var(--secondary);
   border-color: var(--secondary);
 }
@@ -223,8 +223,12 @@ body {
   color: var(--primary);
   background-color: var(--black);
   border-color: var(--black);
-  box-shadow: 0 0 20px 10px var(--primary-shadow),
-    10px 0 20px var(--primary-shadow), -10px 0 20px var(--primary-shadow);
+  box-shadow: 0 0 10px 10px var(--primary-shadow),
+    10px 0 10px var(--primary-shadow), -10px 0 10px var(--primary-shadow);
+}
+
+.btn-special:hover {
+  color: var(--white);
 }
 
 .bw-100 {

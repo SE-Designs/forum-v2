@@ -1,3 +1,8 @@
+.main-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .main-wrapper .btn-container {
   width: 100%;
   max-width: 1200px;
@@ -22,7 +27,7 @@
   align-items: flex-start;
   margin: 10px 0 20px;
   gap: 6px;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 .tag {
@@ -96,22 +101,24 @@
 
 /* Media Queries */
 
-@media only screen and (max-width: 1080px) {
-  .main-back {
-    padding: 40px 20px;
-  }
-
+@media only screen and (max-width: 760px) {
   .main-wrapper {
-    width: calc(100% - 10px);
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 580px) {
-  .main-back {
-    padding: 40px 5px;
-  }
-
   .main-wrapper .btn-container {
     flex-flow: column nowrap;
+  }
+
+  .btn-back {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .main-back {
+    padding: 40px 20px;
   }
 }
