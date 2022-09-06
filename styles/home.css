@@ -128,7 +128,25 @@
   border-radius: 4px;
 }
 
-.right-aside h5 {
+.tags-list i {
+  position: relative;
+  top: 1px;
+}
+
+.sort-container {
+  margin: 10px 0 20px;
+}
+
+.sort-container li {
+  font-size: 0.75rem;
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: var(--semi-white);
+  background-color: var(--black);
+}
+
+h5 {
+  color: var(--primary);
   font-weight: 700;
   font-family: "Space Grotesk", sans-serif;
   margin-bottom: 8px;
@@ -140,21 +158,25 @@
 
 ul {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   gap: 10px;
 }
 
-.tag {
+.cardtag {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
 
-.tag i {
+.cardtag i {
   color: var(--secondary);
 }
 
-.tag div {
+.right-aside .tag {
+  font-size: 0.75rem;
+}
+
+.cardtag div {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;

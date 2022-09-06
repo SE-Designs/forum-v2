@@ -332,6 +332,31 @@
   transition: all 0.8s;
 }
 
+.tags-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px 0 20px;
+  gap: 6px;
+  font-size: 0.75rem;
+}
+
+.tag {
+  line-height: 1.6;
+  font-weight: 700;
+  color: var(--white);
+  border-radius: 4px;
+  padding: 2px 6px;
+  background-color: var(--primary);
+}
+
+.tag::before {
+  content: "•";
+  margin-right: 2px;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 520px) {
