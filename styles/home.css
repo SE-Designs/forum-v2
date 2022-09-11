@@ -6,7 +6,7 @@
 }
 
 .cards-list {
-  width: 70%;
+  flex: 7 0 520px;
   max-width: 920px;
   min-width: none;
   display: flex;
@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
+  transition: all 0.4s;
 }
 
 .cards {
@@ -82,6 +83,7 @@
 .card-bottom {
   display: flex;
   flex-flow: row wrap;
+  gap: 20px;
   justify-content: space-between;
   font-weight: 700;
   font-family: "Space Grotesk", sans-serif;
@@ -111,12 +113,15 @@
 }
 
 .right-aside {
-  max-width: 240px;
-  width: calc(30% - 20px);
+  flex: 1 0 240px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+}
+
+.right-aside .btn-special {
+  max-width: 400px;
 }
 
 .tags-card {
@@ -143,6 +148,11 @@
   padding: 4px 8px;
   color: var(--semi-white);
   background-color: var(--black);
+}
+
+.sort-container .selected-li {
+  color: var(--white);
+  background-color: var(--primary);
 }
 
 h5 {
@@ -186,4 +196,69 @@ ul {
 .img-container {
   width: fit-content;
   gap: 10px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1080px) {
+  .main-wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .main-wrapper {
+    width: 100%;
+  }
+
+  .cards-list {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .main-wrapper .btn-container {
+    flex-flow: column nowrap;
+  }
+
+  .btn-back {
+    display: none;
+  }
+
+  .card-top {
+    flex-flow: column nowrap;
+  }
+
+  .main-wrapper .btn-container {
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 10px;
+  }
+
+  .main-back {
+    padding: 40px 25px;
+  }
+
+  .right-aside {
+    flex-flow: column-reverse nowrap;
+    gap: 20px;
+  }
+
+  .right-aside .btn-special {
+    margin-top: 20px;
+  }
+
+  .cards-list {
+    flex: 1 0 100%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .main-back {
+    padding: 40px 10px;
+  }
+
+  .right-aside .btn-special {
+    width: calc(100% - 40px);
+  }
 }
