@@ -13,27 +13,34 @@ function switchTheme() {
     toggleMode.classList.remove("dark");
     toggleMode.innerHTML = "";
     toggleMode.innerHTML = lightMode;
-    document.documentElement.setAttribute("data-theme", "light");
+
+    document.documentElement.removeAttribute("data-theme");
+
+    // SAVE USER PREFERENCES
+    localStorage.removeItem("toggleMode");
   } else {
     toggleMode.classList.add("dark");
     toggleMode.innerHTML = "";
     toggleMode.innerHTML = darkMode;
+
     document.documentElement.setAttribute("data-theme", "dark");
+
+    // SAVE USER PREFERENCES
+    localStorage.setItem("toggleMode", "dark");
   }
   smoothSidebar();
 }
 
 toggleMode.addEventListener("click", switchTheme);
 
+// TOGGLE SIDEBAR:
 const sidebar = document.getElementById("sidebar");
-// const navbar = document.getElementById("navbar");
 const header = document.getElementById("header");
 const toggleSide = document.getElementById("toggleside");
 const mobileSearchContainer = document.getElementById(
   "mobile-search-container"
 );
 
-// const navLogo = document.getElementById("nav-logo");
 const visible = document.querySelector(".visible");
 const mobileClose = document.getElementById("close-sidebar");
 const mobileSearch = document.getElementById("mobile-search");
@@ -95,6 +102,23 @@ function smoothSidebar() {
   }
 }
 
+// SAVE THEME PREFERENCES:
+if (toggleMode) {
+  let isDarkMode =
+    localStorage.getItem("toggleMode") !== null &&
+    localStorage.getItem("toggleMode") === "dark";
+
+  if (isDarkMode) {
+    switchTheme();
+  }
+}
+
+if (document.documentElement.hasAttribute("data-theme")) {
+  fullLoader.style.backgroundColor = "#000000";
+  const loaderImg = document.getElementById("loader-img");
+  loaderImg.style.filter = "invert(100%)";
+}
+
 // NOTIFICAtIONS:
 const notifications = document.getElementById("notifications");
 notifications.style.opacity = "0";
@@ -116,3 +140,27 @@ notificationIcon.addEventListener("click", () => {
 });
 
 // LIKE/DISLIKE:
+let likes = 0;
+let dislikes = 0;
+const btnLike = document.querySelectorAll("#btn-like");
+const btnDislike = document.querySelectorAll("#btn-dislike");
+
+btnLike.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    likes++;
+    if (btnDislike[i].classList.contains("btn-black")) {
+      btnDislike[i].classList.remove("btn-black");
+    }
+    btn.classList.toggle("btn-black");
+  });
+});
+
+btnDislike.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    dislikes++;
+    if (btnLike[i].classList.contains("btn-black")) {
+      btnLike[i].classList.remove("btn-black");
+    }
+    btn.classList.toggle("btn-black");
+  });
+});

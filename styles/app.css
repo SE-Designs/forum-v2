@@ -1,3 +1,26 @@
+.full-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 1;
+  z-index: 55;
+  transition: all 0.4s;
+}
+
+.full-loader img {
+  width: 10%;
+  min-width: 152px;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 50%;
+}
+
 .header-with-side {
   position: fixed;
   top: 0;
@@ -358,7 +381,6 @@
 }
 
 .notifications {
-  padding: 20px;
   font-family: "Space Grotesk", sans-serif;
   position: fixed;
   top: 75px;
@@ -371,6 +393,10 @@
   background-color: var(--semi-white);
   z-index: 2;
   transition: all 0.4s;
+}
+
+.notifications h6 {
+  width: fit-content;
 }
 
 /* Media Queries */

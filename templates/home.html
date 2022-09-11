@@ -105,12 +105,16 @@
     <link rel="stylesheet" href="../styles/style.css" />
     <!-- APP CSS -->
     <link rel="stylesheet" href="../styles/app.css" />
-    <!-- INDEX CSS -->
+    <!-- HOME CSS -->
     <link rel="stylesheet" href="../styles/home.css" />
     <title>Okumi - Home</title>
   </head>
   <body>
     <main class="main" id="main">
+      <!-- LOADER -->
+      <div class="full-loader" id="full-loader">
+        <img src="../assets/images/preloder.gif" alt="" />
+      </div>
       <!-- NAVBAR -->
       <header class="header-with-side" id="header">
         <nav class="navbar" id="navbar">
@@ -325,12 +329,6 @@
         </nav>
       </header>
       <!-- MAIN CONTENT -->
-      <div class="notifications" id="notifications">
-        <h6>No New Notifications</h6>
-        <ul>
-          <li><a href="#"></a></li>
-        </ul>
-      </div>
       <div class="main-back" id="main-back">
         <div class="main-wrapper">
           <section class="cards-list">
@@ -380,10 +378,10 @@
                     </p>
                   </div>
                   <div class="btn-container">
-                    <button class="btn btn-white">
+                    <button class="btn btn-white" id="btn-like">
                       <i class="ri-thumb-up-line"></i>
                     </button>
-                    <button class="btn btn-white">
+                    <button class="btn btn-white" id="btn-dislike">
                       <i class="ri-thumb-down-line"></i>
                     </button>
                   </div>
@@ -397,7 +395,7 @@
                     />
                     <h4>@mixturegg</h4>
                   </a>
-                  <a href="#" class="card-bottom-right">
+                  <a href="../templates/post.html" class="card-bottom-right">
                     <button class="btn btn-black">
                       20 comments <i class="ri-chat-forward-line"></i>
                     </button>
@@ -419,10 +417,10 @@
                     </p>
                   </div>
                   <div class="btn-container">
-                    <button class="btn btn-white">
+                    <button class="btn btn-white" id="btn-like">
                       <i class="ri-thumb-up-line"></i>
                     </button>
-                    <button class="btn btn-white">
+                    <button class="btn btn-white" id="btn-dislike">
                       <i class="ri-thumb-down-line"></i>
                     </button>
                   </div>
@@ -436,7 +434,7 @@
                     />
                     <h4>@mixturegg</h4>
                   </a>
-                  <a href="#" class="card-bottom-right">
+                  <a href="../templates/post.html" class="card-bottom-right">
                     <button class="btn btn-black">
                       20 comments <i class="ri-chat-forward-line"></i>
                     </button>
@@ -458,10 +456,10 @@
                     </p>
                   </div>
                   <div class="btn-container">
-                    <button class="btn btn-white">
+                    <button class="btn btn-white" id="btn-like">
                       <i class="ri-thumb-up-line"></i>
                     </button>
-                    <button class="btn btn-white">
+                    <button class="btn btn-white" id="btn-dislike">
                       <i class="ri-thumb-down-line"></i>
                     </button>
                   </div>
@@ -475,7 +473,7 @@
                     />
                     <h4>@mixturegg</h4>
                   </a>
-                  <a href="#" class="card-bottom-right">
+                  <a href="../templates/post.html" class="card-bottom-right">
                     <button class="btn btn-black">
                       20 comments <i class="ri-chat-forward-line"></i>
                     </button>
@@ -485,7 +483,11 @@
             </div>
           </section>
           <aside class="right-aside">
-            <button class="btn btn-special bw-100">Start a New Topic</button>
+            <a href="../templates/create-post.html"
+              ><button class="btn btn-special bw-100">
+                Start a New Topic
+              </button></a
+            >
             <section class="tags-card">
               <h5>Top Users:</h5>
               <ul>
@@ -598,6 +600,12 @@
             </section>
           </aside>
         </div>
+      </div>
+      <div class="notifications" id="notifications">
+        <h6>No New Notifications</h6>
+        <ul>
+          <li><a href="#"></a></li>
+        </ul>
       </div>
     </main>
     <script src="../scripts/main.js"></script>
