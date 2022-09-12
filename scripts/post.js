@@ -12,8 +12,10 @@ const btnLike = document.querySelector("#btn-like");
 const btnDislike = document.querySelector("#btn-dislike");
 
 btnLike.addEventListener("click", () => {
-  if (btnDislike.classList.contains("btn-black")) {
-    btnDislike.classList.remove("btn-black");
+  if (btnDislike.classList.contains("btn-secondary")) {
+    btnDislike.classList.remove("btn-secondary");
+    dislikes--;
+    noDislikes.innerText = `${dislikes} Dislikes`;
   }
 
   btnLike.classList.remove("btn-black");
@@ -31,8 +33,10 @@ btnLike.addEventListener("click", () => {
 });
 
 btnDislike.addEventListener("click", () => {
-  if (btnLike.classList.contains("btn-black")) {
-    btnLike.classList.remove("btn-black");
+  if (btnLike.classList.contains("btn-secondary")) {
+    btnLike.classList.remove("btn-secondary");
+    likes--;
+    noLikes.innerText = `${likes} Likes`;
   }
 
   btnDislike.classList.remove("btn-black");

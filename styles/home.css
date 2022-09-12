@@ -119,6 +119,14 @@
   align-items: center;
 }
 
+.right-aside > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 .right-aside .btn-special {
   max-width: 400px;
 }

@@ -8,6 +8,7 @@ const fullLoader = document.getElementById("full-loader");
 //     fullLoader.style.display = "none";
 //   }, 800);
 // });
+
 // ARTIFICIAL LOADER:
 setTimeout(() => {
   fullLoader.style.opacity = "0";

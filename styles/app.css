@@ -431,7 +431,7 @@
 @media only screen and (max-width: 380px) {
   .sidebar.active .nav-logo-container {
     justify-content: space-between;
-    padding: 10px 10px 10px 40px;
+    padding: 10px 20px 10px 40px;
   }
 
   .sidebar.active .sidebar-active-item {
@@ -456,5 +456,23 @@
 
   .sidebar.active .sidebar-wrapper {
     padding: 20px 0;
+  }
+
+  .header-with-side {
+    width: 100%;
+    left: 0;
+  }
+
+  .sidebar {
+    left: -60px;
+  }
+
+  .main-back {
+    width: 100%;
+    left: 0;
+  }
+
+  .sidebar.active {
+    left: 0;
   }
 }

@@ -46,6 +46,10 @@ a:hover {
   opacity: 0.8;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Space Grotesk - 400, 700 */
 /* Poppins - 200, 400, 700, 900 */
 /* Space Mono - 700 Italic */
