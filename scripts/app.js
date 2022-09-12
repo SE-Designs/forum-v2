@@ -116,7 +116,7 @@ if (toggleMode) {
 if (document.documentElement.hasAttribute("data-theme")) {
   fullLoader.style.backgroundColor = "#000000";
   const loaderImg = document.getElementById("loader-img");
-  loaderImg.style.filter = "invert(100%)";
+  loaderImg.style.filter = "invert()";
 }
 
 // NOTIFICAtIONS:
@@ -137,30 +137,4 @@ notificationIcon.addEventListener("click", () => {
       notifications.style.display = "none";
     }, 500);
   }
-});
-
-// LIKE/DISLIKE:
-let likes = 0;
-let dislikes = 0;
-const btnLike = document.querySelectorAll("#btn-like");
-const btnDislike = document.querySelectorAll("#btn-dislike");
-
-btnLike.forEach((btn, i) => {
-  btn.addEventListener("click", () => {
-    likes++;
-    if (btnDislike[i].classList.contains("btn-black")) {
-      btnDislike[i].classList.remove("btn-black");
-    }
-    btn.classList.toggle("btn-black");
-  });
-});
-
-btnDislike.forEach((btn, i) => {
-  btn.addEventListener("click", () => {
-    dislikes++;
-    if (btnLike[i].classList.contains("btn-black")) {
-      btnLike[i].classList.remove("btn-black");
-    }
-    btn.classList.toggle("btn-black");
-  });
 });

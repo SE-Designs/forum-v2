@@ -1,19 +1,20 @@
 // LOADER:
 const fullLoader = document.getElementById("full-loader");
 
+// REAL LOADER:
 // window.addEventListener("DOMContentLoaded", () => {
 //   fullLoader.style.opacity = "0";
 //   setTimeout(() => {
 //     fullLoader.style.display = "none";
 //   }, 800);
 // });
-
+// ARTIFICIAL LOADER:
 setTimeout(() => {
   fullLoader.style.opacity = "0";
   setTimeout(() => {
     fullLoader.style.display = "none";
   }, 800);
-}, 600);
+}, 400);
 
 const profileImg = document.getElementById("profile-img");
 
