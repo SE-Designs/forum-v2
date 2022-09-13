@@ -369,7 +369,7 @@
 .tag {
   line-height: 1.6;
   font-weight: 700;
-  color: var(--white);
+  color: var(--black);
   border-radius: 4px;
   padding: 2px 6px;
   background-color: var(--primary);
@@ -452,10 +452,6 @@
 
   .sidebar.active {
     width: 100%;
-  }
-
-  .sidebar.active .sidebar-wrapper {
-    padding: 20px 0;
   }
 
   .header-with-side {

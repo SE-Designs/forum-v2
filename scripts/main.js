@@ -15,7 +15,7 @@ setTimeout(() => {
   setTimeout(() => {
     fullLoader.style.display = "none";
   }, 800);
-}, 400);
+}, 200);
 
 const profileImg = document.getElementById("profile-img");
 

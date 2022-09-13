@@ -47,13 +47,14 @@
 
 .card-info h3 {
   color: var(--black);
-  font-weight: 700;
+  font-weight: 900;
   font-size: 1.25rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 10px;
 }
 
 .card-info p {
+  font-weight: 400;
   color: var(--semi-black);
   text-align: justify;
 }
@@ -146,26 +147,31 @@
 }
 
 .sort-container {
-  margin: 10px 0 20px;
+  margin: 10px 0;
 }
 
 .sort-container li {
-  font-size: 0.75rem;
   border-radius: 4px;
-  padding: 4px 8px;
   color: var(--semi-white);
-  background-color: var(--black);
+  background-color: var(--semi-black);
+}
+
+.sort-container li > a {
+  display: inline-block;
+  margin: 4px 8px 4px 6px;
+  font-weight: 700;
+  font-size: 0.75rem;
 }
 
 .sort-container .selected-li {
-  color: var(--white);
+  color: var(--black);
   background-color: var(--primary);
 }
 
 h5 {
-  color: var(--primary);
-  font-weight: 700;
-  font-family: "Space Grotesk", sans-serif;
+  color: var(--black);
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 8px;
 }
 

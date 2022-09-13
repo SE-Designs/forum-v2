@@ -119,10 +119,9 @@ strong::before {
 }
 
 .post-card-info h4 {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 1.25rem;
-  font-style: italic;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--black);
   margin-bottom: 8px;
 }

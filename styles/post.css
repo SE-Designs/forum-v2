@@ -12,11 +12,10 @@
 }
 
 .title {
-  color: var(--black);
-  font-weight: 700;
   font-size: 1.75rem;
-  font-style: italic;
+  font-weight: 700;
   font-family: "Space Grotesk", sans-serif;
+  color: var(--black);
 }
 
 .message {
