@@ -173,6 +173,7 @@ h5 {
   font-weight: 900;
   font-family: "Poppins", sans-serif;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .right-aside img {
@@ -236,6 +237,16 @@ ul {
 @media only screen and (max-width: 1080px) {
   .main-wrapper {
     width: 100%;
+    flex-flow: column-reverse nowrap;
+  }
+
+  .right-aside {
+    flex-flow: column-reverse nowrap;
+    gap: 20px;
+  }
+
+  .tags-card {
+    margin-top: 0;
   }
 }
 

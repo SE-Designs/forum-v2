@@ -119,7 +119,7 @@ strong::before {
 }
 
 .post-card-info h4 {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 1.25rem;
   font-family: "Poppins", sans-serif;
   color: var(--black);

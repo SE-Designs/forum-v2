@@ -120,21 +120,21 @@ if (document.documentElement.hasAttribute("data-theme")) {
 }
 
 // NOTIFICAtIONS:
-const notifications = document.getElementById("notifications");
-notifications.style.opacity = "0";
-notifications.style.display = "none";
-const notificationIcon = document.getElementById("notification-icon");
+// const notifications = document.getElementById("notifications");
+// notifications.style.opacity = "0";
+// notifications.style.display = "none";
+// const notificationIcon = document.getElementById("notification-icon");
 
-notificationIcon.addEventListener("click", () => {
-  if (notifications.style.display === "none") {
-    notifications.style.display = "flex";
-    setTimeout(() => {
-      notifications.style.opacity = "1";
-    }, 50);
-  } else {
-    notifications.style.opacity = "0";
-    setTimeout(() => {
-      notifications.style.display = "none";
-    }, 500);
-  }
-});
+// notificationIcon.addEventListener("click", () => {
+//   if (notifications.style.display === "none") {
+//     notifications.style.display = "flex";
+//     setTimeout(() => {
+//       notifications.style.opacity = "1";
+//     }, 50);
+//   } else {
+//     notifications.style.opacity = "0";
+//     setTimeout(() => {
+//       notifications.style.display = "none";
+//     }, 500);
+//   }
+// });
