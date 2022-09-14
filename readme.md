@@ -117,7 +117,7 @@ bla-bla-bla
 - [x] home navbar, sidebar, dark mode
 - [x] create-post, post, profile pages
 - [x] app/home init
-- [ ] app/home upgraded
+- [x] app/home upgraded
 - [ ] settings, forums, explore pages
 - [ ] code refactoring + notifications
 - [ ] adding basic js

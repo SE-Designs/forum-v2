@@ -182,17 +182,32 @@ h5 {
 ul {
   display: flex;
   flex-flow: row wrap;
-  gap: 10px;
+  gap: 6px;
+}
+
+.tags-card:first-of-type ul li {
+  width: 100%;
+}
+
+.ri-arrow-right-up-line {
+  color: var(--primary);
+}
+
+.ri-arrow-right-line {
+  color: var(--secondary);
+}
+
+.ri-arrow-right-down-line {
+  color: var(--semi-black);
 }
 
 .cardtag {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-}
-
-.cardtag i {
-  color: var(--secondary);
+  gap: 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
 }
 
 .right-aside .tag {
@@ -209,6 +224,11 @@ ul {
 .img-container {
   width: fit-content;
   gap: 10px;
+}
+
+.img-container > img {
+  width: 32px;
+  height: 32px;
 }
 
 /* Media Queries */
