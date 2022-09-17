@@ -158,7 +158,7 @@
 
 .sort-container li > a {
   display: inline-block;
-  margin: 4px 8px 4px 6px;
+  padding: 4px 8px 4px 6px;
   font-weight: 700;
   font-size: 0.75rem;
 }

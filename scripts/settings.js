@@ -8,16 +8,16 @@ themesP1 = [
   "var(--secondary)",
   "#ae2fc5",
   "#e58816",
-  "#b7ebeb",
+  "#213bca",
 ];
 
 themesP2 = [
   "var(--semi-black)",
-  "var(--primary-shadow)",
-  "var(--secondary-shadow)",
-  "#7a1c8b",
+  "#3c6408",
+  "var(--paragraph)",
+  "#821697",
   "#a26417",
-  "#89b7b7",
+  "var(--secondary)",
 ];
 
 // CHANGE NAV & SIDE
@@ -32,6 +32,10 @@ themeToggle.forEach((el, i) => {
     header.style.backgroundColor = themesP1[i];
     sidebar.style.backgroundColor = themesP2[i];
     themeCheck[i].innerHTML = `<i class="ri-check-line"></i>`;
+    themeToggle.forEach((element) => {
+      element.classList.remove("active");
+    });
+    el.classList.add("active");
   });
 });
 

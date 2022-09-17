@@ -13,9 +13,6 @@
   --semi-black: #1f2225;
   --semi-white: rgb(218, 203, 203);
   --paragraph: rgba(247, 233, 228, 0.75);
-  --shadow: rgba(8, 7, 5, 0.25);
-  --primary-shadow: rgba(125, 200, 27, 0.5);
-  --secondary-shadow: rgba(0, 81, 255, 0.5);
 }
 
 /* Dark Mode */
@@ -27,9 +24,6 @@
   --semi-black: rgb(218, 203, 203);
   --semi-white: #1f2225;
   --paragraph: rgba(247, 233, 228, 0.75);
-  --shadow: rgba(8, 7, 5, 0.25);
-  --primary-shadow: rgba(125, 200, 27, 0.5);
-  --secondary-shadow: rgba(0, 81, 255, 0.5);
 }
 
 *:focus {

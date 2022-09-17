@@ -25,12 +25,16 @@
   padding: 4px;
   border-radius: 4px;
   color: var(--black);
-  border: 2px solid var(--semi-black);
+  border: 2px solid var(--semi-white);
   font-family: "Space Grotesk", sans-serif;
 }
 
 .theme:hover {
   border: 2px solid var(--primary);
+}
+
+.theme.active {
+  border: 2px solid var(--secondary);
 }
 
 .color-container {
@@ -45,27 +49,63 @@
 }
 
 .Default {
-  background-color: var(--semi-black);
+  background: linear-gradient(
+    to right,
+    var(--black),
+    var(--black) 50%,
+    var(--semi-black) 50%,
+    var(--semi-black) 100%
+  );
 }
 
 .Primary {
-  background-color: var(--primary);
+  background: linear-gradient(
+    to right,
+    var(--primary),
+    var(--primary) 50%,
+    #3c6408 50%,
+    #3c6408 100%
+  );
 }
 
 .Secondary {
-  background-color: var(--secondary);
+  background: linear-gradient(
+    to right,
+    var(--secondary),
+    var(--secondary) 50%,
+    var(--paragraph) 50%,
+    var(--paragraph) 100%
+  );
 }
 
 .Purple {
-  background-color: #ae2fc5;
+  background: linear-gradient(
+    to right,
+    #ae2fc5,
+    #ae2fc5 50%,
+    #821697 50%,
+    #821697 100%
+  );
 }
 
 .Orange {
-  background-color: #e58816;
+  background: linear-gradient(
+    to right,
+    #e58816,
+    #e58816 50%,
+    #a26417 50%,
+    #a26417 100%
+  );
 }
 
 .WhiteSky {
-  background-color: #b7ebeb;
+  background: linear-gradient(
+    to right,
+    #213bca,
+    #213bca 50%,
+    var(--secondary) 50%,
+    var(--secondary) 100%
+  );
 }
 
 .main-wrapper .horizontal-rule {
